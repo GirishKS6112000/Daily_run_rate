@@ -152,14 +152,14 @@ footer{
     }
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:320px){
     .form-container{
         
         padding: 20px;
         border: 1px solid black;
         width: 100%;
         height: auto;
-        margin-left: 100px;
+        margin-left: 10px;
         
        
     }
@@ -177,7 +177,7 @@ footer{
     footer{
         color: white;
         margin-top: 600px ;
-        width: 180%;
+        width: 100%;
         
     }
 }

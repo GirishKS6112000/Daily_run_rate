@@ -1,0 +1,183 @@
+body{
+   padding: 0;
+   margin: 0;
+    background-color: rgb(243, 243, 239);
+
+}
+
+.head{
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    background-color: rgb(226, 209, 237);
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+#my-form input{
+    padding: 5px;
+}
+
+#my-form input:focus{
+    border-radius: 10px;
+    
+}
+#btn{
+    background-color: rgb(79, 189, 49);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btn:hover{
+    background-color: rgb(12, 161, 9);
+    font-weight: bold;
+}
+
+#cancel{
+    background-color: rgb(241, 41, 41);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+#cancel:hover{
+    background-color: rgb(203, 13, 13);
+    font-weight: bold;
+}
+
+#mytable{
+    border: 1px solid rgb(255, 0, 0);
+    width: 90%;
+    margin-left: 50px;
+}
+
+footer{
+    margin-top: 200px;
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    .form-container{
+       
+        padding: 20px;
+        border: 1px solid black;
+        width: 50%;
+        height: auto;
+        margin-left:50px;
+        
+       
+    }
+    .head{
+        margin-left: -150px;
+    }
+    #mytable{
+        overflow-y: scroll;
+        overflow-x: scroll;
+        width: 100%;
+        margin: 10px;
+        z-index: 50;
+    }
+}
+
+@media screen and (max-width:480px){
+    .form-container{
+       
+        padding: 20px;
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+        margin-left:30px;
+        
+       
+    }
+    .head{
+        margin-left: 50px;
+    }
+    #mytable{
+        overflow-y: scroll;
+        overflow-x: scroll;
+        
+        margin: 0;
+        z-index: 50;
+    }
+    footer{
+        color: white;
+        margin-top: 440px ;
+        width: 110%;
+    }
+}
+
+
+
+
+@media screen and (max-width:420px){
+    .form-container{
+       
+        padding: 20px;
+        border: 1px solid black;
+        width: 80%;
+        height: auto;
+        margin-left:10px;
+        
+       
+    }
+    .head{
+        text-align: center;
+    }
+    #mytable{
+        overflow-y: scroll;
+        overflow-x: scroll;
+        width: 100%;
+        margin: 0;
+        z-index: 50;
+    }
+    footer{
+        color: white;
+        margin-top: 600px ;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:300px){
+    .form-container{
+        
+        padding: 20px;
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+        margin-left: 100px;
+        
+       
+    }
+    .head{
+       margin-left: 10px; 
+    }
+
+    #mytable{
+        overflow-y: scroll;
+        overflow-x: scroll;
+        width: 100%;
+        margin: 0;
+        z-index: 50;
+    }
+    footer{
+        color: white;
+        margin-top: 600px ;
+        width: 180%;
+        
+    }
+}

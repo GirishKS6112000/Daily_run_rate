@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Run Rate</title>
+</head>
+<body>
+    <h1 class="head">Daily Run Rate</h1>
+    <div class="form-container">
+    <form id="my-form">
+        <label for="id">ID: </label><input type="text" name="id" id="id"/><br><br>
+        <label for="sd">Start-Date: </label><input type="date" name="sd" id="sd" /><br><br>
+        <label for="ed">End-Date: </label><input type="date" name="ed" id="ed"/><br><br>
+        <label for="datepicker">Date-Excluded: </label><input type="text" id="datepicker">
+        <input type="text" id="selected-dates" >
+        <br><br>
+        <label for="lc">Number of Leads: </label><input type="text" name="lc" id="lc"/><br><br>
+        <!-- <label for="edrr">Expected DRR: </label><input type="text" name="edrr" id="edrr"/><br><br> -->
+        <input type="submit" name="btn" id="btn" value="Save" /><input type="reset" value="Cancel" id="cancel">
+        
+    </form>
+</div>
+<br><br>
+
+    <table id="mytable" border="1px" cellspacing="0" cellpadding="10"  height="auto">
+        <tr>
+            <th>Action</th>
+            <th>ID</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Month,Year</th>
+            <th>Dates Excluded</th>
+            <th>Number of days</th>
+            <th>Lead Count</th>
+            <th>Expected DRR</th>
+            <th>Last Updated</th>
+        </tr>
+    </table>
+
+    <footer class="bg-black text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Hunt Digital Media</h5>
+      
+              <p>
+                Hunt Digital Media is a leading performance marketing agency dedicated to helping advertisers generate leads. With a strong commitment to excellence, we aim to deliver results that exceed expectations
+              </p>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Daily Run Rate</h5>
+      
+              <p>
+                The DRR (Daily Run Rate) Report is a crucial tool in our arsenal, helping us track daily lead delivery with precision
+              </p>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a  href="https://www.huntdigitalmedia.com/" style="color: white; text-decoration: none;">huntdigitalmedia.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    <script src="./jquery.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+
+
+</body>
+</html>
